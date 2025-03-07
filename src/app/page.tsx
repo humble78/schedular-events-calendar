@@ -261,11 +261,11 @@ const exampleFeatures = [
 
 export default function Home() {
   return (
-    <div className="p-40 pt-14 h-full flex-1 flex-col gap-2">
-      <div className="absolute right-40 top-10">
+    <div className="md:px-20 xl:px-40 py-14 flex-1 flex-col gap-2">
+      <div className="flex justify-between">
+        <h2 className="text-2xl font-bold tracking-tight">Welcome back!</h2>
         <ModeToggle />
       </div>
-      <h2 className="text-2xl font-bold tracking-tight">Welcome back!</h2>
       <p className="text-muted-foreground">
         Here&apos;s your orders for this month!
       </p>

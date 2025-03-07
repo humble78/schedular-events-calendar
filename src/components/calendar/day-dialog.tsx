@@ -37,7 +37,7 @@ export const DayDialog = () => {
                                         getColorClass(event.status)
                                     )}>
                                     <div className="flex-1 flex items-center justify-between gap-4">
-                                        <div className="flex-1 flex items-center gap-2">
+                                        <div className="flex items-center gap-2 overflow-hidden">
                                             {/* <Avatar>
                                         <AvatarImage src="" alt="@shadcn" />
                                         <AvatarFallback className={getBgColor(colors[index % colors.length])}>
@@ -46,12 +46,12 @@ export const DayDialog = () => {
                                     </Avatar> */}
                                             <p className="whitespace-break-spaces truncate">{event.name}</p>
                                         </div>
-                                        <p className="whitespace-nowrap flex-1 flex items-center justify-end gap-4">
-                                            <span>
+                                        <p className="whitespace-nowrap flex flex-col items-center gap-2 min-[450px]:flex-row">
+                                            <span className="whitespace-nowrap">
                                                 {format(event.startedAt, "d, HH:mm")}
                                             </span>
                                             <Repeat className="size-4" />
-                                            <span className="w-16">
+                                            <span className="whitespace-nowrap">
                                                 {format(event.endedAt, "d, HH:mm")}
                                             </span>
                                         </p>
